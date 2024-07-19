@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    text-align: center;
+    padding: 30px;
+    background-color: #313e51;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+.quizOptionList{
+    display: block;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+
+}
+.quizOptionList ol{
+    list-style: none;
+}
+.quizOptionList ol li{
+    background-color: #3c4d67;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+}
+ol li:hover{
+    background-color: #2196F3;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider::before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider{
+    background-color: #a928f5;
+}
+
+input:focus + .slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider::before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round::before{
+    border-radius: 50%;
+}
+.header h1{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 370px;
+}
+.header h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 340px;
+}
+.header p{
+    font-size: xx-small;
+    margin-right: 490px;
+    font-weight: lighter;
+    margin-top: 40px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quizOptionList{
+    margin-top: 20px;
+}
+
+.quizOptionList {
+    display: block;
+    margin: 10px 0;
+    text-align: start;
+    margin-left: 200px;
+    color: whitesmoke;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.toggle-container {
+    margin-top: 10px;
+    margin-left: 400px;
+    display: flex;
+}
+.quizOptionList button{
+    width: 50%;
+    margin-right: 5rem;
+    overflow: hidden;
+}
+.brightmode{
+    width: 70px;
+    height: 70px;
+}
+.nightmode{
+    width: 35px;
+    height: 35px;
+    margin-left: 23px;
+}
+.containerIcons {
+    display: flex;
+    align-items: center;
+    margin-left: 540px;
+}
+.htmlimage{
+    width: 30px;
+    height: 30px;    
+}
+.optionContainer{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+
+}
